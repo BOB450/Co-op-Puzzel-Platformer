@@ -1,5 +1,5 @@
 # Co-op-Puzzel-Platformer
-The root of the unity project is the UnityProject file 
+The root of the unity project is the UnityProject folder
 
 USE UNITY version 2020.1.1f1
 
