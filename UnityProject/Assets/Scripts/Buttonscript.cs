@@ -12,6 +12,7 @@ public class Buttonscript : MonoBehaviour
     public Transform walldownpos;
     public Transform walluppos;
     public GameObject bluewall;
+    public bool iswallhorozontal;
    
 
 
