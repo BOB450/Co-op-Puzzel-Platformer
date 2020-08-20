@@ -12,20 +12,23 @@ public class Buttonscript : MonoBehaviour
     public Transform walldownpos;
     public Transform walluppos;
     public GameObject bluewall;
-    
-    
+   
+
+
+
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
 
     }
     // player colides with button
@@ -34,8 +37,8 @@ public class Buttonscript : MonoBehaviour
 
 
         //if (myTrigger.gameObject.name == "Dana")
-      //  {
-           // Debug.Log("Entered");
+        //  {
+        // Debug.Log("Entered");
         buttonpressed = true;
         isbuttonpressed();
         //}
@@ -48,7 +51,7 @@ public class Buttonscript : MonoBehaviour
 
     void isbuttonpressed()
     {
-        if (buttonpressed == true)
+        if (buttonpressed)
         {
             Debug.Log("yes");
 
@@ -59,16 +62,16 @@ public class Buttonscript : MonoBehaviour
         }
         else
         {
-            Debug.Log("no");
+            Debug.Log("change color");
+
             moveup();
-           
 
         }
 
-        
+
     }
 
-  
+
 
     void movedown()
     {
@@ -76,7 +79,7 @@ public class Buttonscript : MonoBehaviour
         {
 
             bluewall.transform.Translate(0, -Time.deltaTime, 0, Space.World);
-            
+
         }
     }
 
@@ -94,3 +97,7 @@ public class Buttonscript : MonoBehaviour
 
 
 }
+    
+
+
+
