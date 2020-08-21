@@ -30,7 +30,7 @@ public class Buttonscript : MonoBehaviour
     void Update()
     {
 
-
+        
     }
     // player colides with button
     void OnTriggerEnter2D(Collider2D col)
@@ -54,11 +54,12 @@ public class Buttonscript : MonoBehaviour
     {
         if (buttonpressed)
         {
-            Debug.Log("yes");
+           
 
             if (iswallhorozontal == false)
             {
                 movedown();
+                Debug.Log("yes");
             }
             if (iswallhorozontal == true)
             {
@@ -74,6 +75,7 @@ public class Buttonscript : MonoBehaviour
             if (iswallhorozontal == false)
             {
                 moveup();
+                Debug.Log("no");
             }
             if (iswallhorozontal == true)
             {
@@ -117,7 +119,7 @@ public class Buttonscript : MonoBehaviour
         while (walluppos.position.x < wall.transform.position.x)
         {
 
-            wall.transform.Translate(0, Time.deltaTime, 0, Space.World);
+            wall.transform.Translate(-Time.deltaTime, 0, 0, Space.World);
 
         }
 
@@ -129,7 +131,7 @@ public class Buttonscript : MonoBehaviour
         while (walldownpos.position.x > wall.transform.position.x)
         {
 
-            wall.transform.Translate(0, -Time.deltaTime, 0, Space.World);
+            wall.transform.Translate(Time.deltaTime, 0, 0, Space.World);
 
         }
     }
