@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2186240922133230674}
   - component: {fileID: 2186240922133230677}
   - component: {fileID: 2186240922133230678}
-  m_Layer: 12
+  m_Layer: 9
   m_Name: greenbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,4 +147,3 @@ MonoBehaviour:
   walldownpos: {fileID: 0}
   walluppos: {fileID: 0}
   bluewall: {fileID: 0}
-  changewallcolor: 0
