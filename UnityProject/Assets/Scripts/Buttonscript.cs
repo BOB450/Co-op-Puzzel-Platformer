@@ -11,8 +11,7 @@ public class Buttonscript : MonoBehaviour
     bool buttonpressed = false;//is button pressed
     public Transform walldownpos;
     public Transform walluppos;
-    public GameObject wall;
-    public bool iswallhorozontal;
+    public GameObject bluewall;
    
 
 
@@ -30,7 +29,7 @@ public class Buttonscript : MonoBehaviour
     void Update()
     {
 
-        
+
     }
     // player colides with button
     void OnTriggerEnter2D(Collider2D col)
@@ -54,34 +53,19 @@ public class Buttonscript : MonoBehaviour
     {
         if (buttonpressed)
         {
-           
+            Debug.Log("yes");
 
-            if (iswallhorozontal == false)
-            {
-                movedown();
-                Debug.Log("yes");
-            }
-            if (iswallhorozontal == true)
-            {
-                movedownhor();
-                Debug.Log("yeshor");
-            }
+            // DestroyGameObject();
+            movedown();
 
 
         }
         else
         {
             Debug.Log("change color");
-            if (iswallhorozontal == false)
-            {
-                moveup();
-                Debug.Log("no");
-            }
-            if (iswallhorozontal == true)
-            {
-                moveuphor();
-                Debug.Log("nohor");
-            }
+
+            moveup();
+
         }
 
 
@@ -91,10 +75,10 @@ public class Buttonscript : MonoBehaviour
 
     void movedown()
     {
-        while (walldownpos.position.y < wall.transform.position.y)
+        while (walldownpos.position.y < bluewall.transform.position.y)
         {
 
-            wall.transform.Translate(0, -Time.deltaTime, 0, Space.World);
+            bluewall.transform.Translate(0, -Time.deltaTime, 0, Space.World);
 
         }
     }
@@ -102,38 +86,13 @@ public class Buttonscript : MonoBehaviour
     void moveup()
     {
 
-        while (walluppos.position.y > wall.transform.position.y)
+        while (walluppos.position.y > bluewall.transform.position.y)
         {
 
-            wall.transform.Translate(0, Time.deltaTime, 0, Space.World);
+            bluewall.transform.Translate(0, Time.deltaTime, 0, Space.World);
 
         }
 
-    }
-
-
-    void moveuphor() 
-    {
-
-
-        while (walluppos.position.x < wall.transform.position.x)
-        {
-
-            wall.transform.Translate(-Time.deltaTime, 0, 0, Space.World);
-
-        }
-
-
-    }
-
-    void movedownhor()
-    {
-        while (walldownpos.position.x > wall.transform.position.x)
-        {
-
-            wall.transform.Translate(Time.deltaTime, 0, 0, Space.World);
-
-        }
     }
 
 
