@@ -1651,6 +1651,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &489295863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489295864}
+  m_Layer: 0
+  m_Name: bluewallup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489295864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489295863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.38, y: 5.747944, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &562885420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2025,7 +2055,7 @@ PrefabInstance:
     - target: {fileID: 615972492291629124, guid: 14feff64b418e984f967525b0169e34d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.49
+      value: 7.886
       objectReference: {fileID: 0}
     - target: {fileID: 615972492291629124, guid: 14feff64b418e984f967525b0169e34d,
         type: 3}
@@ -2072,6 +2102,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 615972492291629124, guid: 14feff64b418e984f967525b0169e34d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.747944
+      objectReference: {fileID: 0}
     - target: {fileID: 615972492291629128, guid: 14feff64b418e984f967525b0169e34d,
         type: 3}
       propertyPath: m_Name
@@ -2079,6 +2114,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14feff64b418e984f967525b0169e34d, type: 3}
+--- !u!1 &1533641499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533641500}
+  m_Layer: 0
+  m_Name: bluwall1down
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1533641500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533641499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.38, y: 1.67, z: -24.403322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1615229884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2146,8 +2211,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2186240922133230678, guid: 6185fedf50935fb49aec1acc2eb26649,
+        type: 3}
+      propertyPath: bluewall
+      value: 
+      objectReference: {fileID: 1803466239}
+    - target: {fileID: 2186240922133230678, guid: 6185fedf50935fb49aec1acc2eb26649,
+        type: 3}
+      propertyPath: walluppos
+      value: 
+      objectReference: {fileID: 489295864}
+    - target: {fileID: 2186240922133230678, guid: 6185fedf50935fb49aec1acc2eb26649,
+        type: 3}
+      propertyPath: walldownpos
+      value: 
+      objectReference: {fileID: 1533641500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6185fedf50935fb49aec1acc2eb26649, type: 3}
+--- !u!1 &1803466239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 615972492291629128, guid: 14feff64b418e984f967525b0169e34d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1404748116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922540417
 PrefabInstance:
   m_ObjectHideFlags: 0
