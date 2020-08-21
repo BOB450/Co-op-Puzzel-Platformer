@@ -5898,6 +5898,11 @@ PrefabInstance:
       propertyPath: se
       value: lv2
       objectReference: {fileID: 0}
+    - target: {fileID: 1647428636406677824, guid: f0ce930e50e5401418f293dc0583551e,
+        type: 3}
+      propertyPath: nextscene
+      value: lv2
+      objectReference: {fileID: 0}
     - target: {fileID: 1647428636406677827, guid: f0ce930e50e5401418f293dc0583551e,
         type: 3}
       propertyPath: m_LocalPosition.x

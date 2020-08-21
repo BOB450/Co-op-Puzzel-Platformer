@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 2687539129525393655}
   m_Layer: 11
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: bluePlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
