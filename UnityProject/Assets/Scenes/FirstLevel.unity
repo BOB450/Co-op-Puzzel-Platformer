@@ -5491,6 +5491,11 @@ PrefabInstance:
       propertyPath: walldownpos
       value: 
       objectReference: {fileID: 362907783}
+    - target: {fileID: 2186240922133230678, guid: 6185fedf50935fb49aec1acc2eb26649,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 1952194638}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6185fedf50935fb49aec1acc2eb26649, type: 3}
 --- !u!1 &1569551384
@@ -5888,6 +5893,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 731753180653418657, guid: 6069c4e1c6f22b6458dade9dda69a45f,
         type: 3}
+    - target: {fileID: 2730627619542898813, guid: 2a6563390dc61a143a5fc9b281e78efc,
+        type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 1130200060}
     - target: {fileID: 2730627619542898815, guid: 2a6563390dc61a143a5fc9b281e78efc,
         type: 3}
       propertyPath: m_LocalPosition.x

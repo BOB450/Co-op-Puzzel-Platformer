@@ -22,8 +22,14 @@ public class damagetoplayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadScene(2);
-
+        if (col.gameObject.tag == "greenPlayer")
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (col.gameObject.tag == "bluePlayer")
+        {
+            SceneManager.LoadScene(2);
+        }
 
 
     }
