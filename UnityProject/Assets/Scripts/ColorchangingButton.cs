@@ -7,9 +7,15 @@ public class ColorchangingButton : MonoBehaviour
     bool buttonpressed = false;
     public bool chtogreen;
     public bool chtoblue;
+    public bool chtopurple;
     public GameObject obj;
-    public Material blue;
-    public Material green;
+    SpriteRenderer sprite;
+    public string objcolor;
+
+    void Start()
+    {
+        sprite = obj.GetComponent<SpriteRenderer>();
+    }
 
 
     void OnTriggerEnter2D(Collider2D col)
@@ -39,6 +45,10 @@ public class ColorchangingButton : MonoBehaviour
             {
                 toblue();
             }
+            if (chtopurple)
+            {
+                topurple();
+            }
         }
         else 
         {
@@ -50,6 +60,7 @@ public class ColorchangingButton : MonoBehaviour
     {
         obj.layer = 9;
         Debug.Log("togren");
+        sprite.color = new Color(0, 1, 0, 1);
 
     }
 
@@ -57,18 +68,31 @@ public class ColorchangingButton : MonoBehaviour
     {
         obj.layer = 12;
         Debug.Log("toblue");
+        sprite.color = new Color(0, 0, 1, 1);
+    }
+
+    void topurple()
+    {
+        obj.layer = 8;
+        Debug.Log("toblue");
+        sprite.color = new Color(1, 0, 1, 1);
     }
 
     void revertcolor()
     {
-        if (chtogreen)
+        if (objcolor == "purple")
         {
-            obj.layer = 12;
-            blue.SetColor("_Color", Color.green);
+            obj.layer = 8;
+            sprite.color = new Color(1, 0, 1, 1);
         }
-        if (chtoblue)
+        if (objcolor == "blue")
         {
-            
+            sprite.color = new Color(0, 0, 1, 1);
+            obj.layer = 12;
+        }
+        if (objcolor == "green")
+        {
+            sprite.color = new Color(0, 1, 0, 1);
             obj.layer = 9;
         }
     }
