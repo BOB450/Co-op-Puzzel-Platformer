@@ -13,4 +13,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void githublink()
+    {
+        Application.OpenURL("https://github.com/BOB450/Co-op-Puzzel-Platformer");
+    }
 }
