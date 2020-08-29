@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3297234976374406543}
   - component: {fileID: 5216566922374618240}
   m_Layer: 0
-  m_Name: nutralbuttonColor
+  m_Name: nutralButtonUnknown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,4 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chtogreen: 0
   chtoblue: 0
+  chtopurple: 0
   obj: {fileID: 0}
+  objcolor: 
