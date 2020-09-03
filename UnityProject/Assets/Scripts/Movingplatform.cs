@@ -1,46 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Movingplatform : MonoBehaviour
 {
-    public Transform target;
-    public Rigidbody2D rb;
-    public float speed;
-    public bool moveUp;
-    private Transform startPos;
-    public GameObject plat;
 
+    public GameObject rightpos;
+    public GameObject leftpos;
+    public GameObject plat;
+    private Rigidbody2D rb;
+    public bool movingright = true;
+    float platx;
+    float leftx;
+    float rightx;
+    public float speed;
+    public float cordright;
+    public float cordleft;
 
     void Start()
     {
+        Debug.Log(plat.transform.position.x);
         rb = GetComponent<Rigidbody2D>();
-        // moveplat();
+
     }
 
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        float step = speed * Time.deltaTime;
-        if (plat.transform.position.x == target.position.x)
+        platx = plat.transform.position.x;
+        rightx = rightpos.transform.position.x;
+        leftx = leftpos.transform.position.x;
+        if (movingright == true)
         {
-            moveUp = false;
+            //  plat.transform.Translate(Vector3.Lerp.right * Time.deltaTime);
+            rb.velocity = new Vector3(speed, 0, 0);
         }
-        else if (plat.transform.position.x == startPos.position.x)
+        if (movingright == false)
         {
-            moveUp = true;
+            // plat.transform.Translate(Vector3.right * -Time.deltaTime);
+            rb.velocity = new Vector3(-speed, 0, 0);
         }
-        if (moveUp == false)
+        if (platx >= cordright )
         {
-            rb.MovePosition(transform.position + transform.right * Time.fixedDeltaTime);
+            movingright = false;
         }
-        else if (moveUp)
+        if (platx <= cordleft)
         {
-            rb.MovePosition(transform.position + transform.right * -Time.fixedDeltaTime);
+            movingright = true;
         }
+        
     }
 
 
