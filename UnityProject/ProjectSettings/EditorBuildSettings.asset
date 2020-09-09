@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Used Scenes/levelTwo.unity
     guid: 90f6fd171ba2e8741b10a4eb66cdedc2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FirstLevel.unity
     guid: e7ab6d921c0739c41b14bbfdeb9ddcc4
   - enabled: 1
@@ -23,13 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Used Scenes/levelThree.unity
     guid: 71418424f9994544b9c952aeeefe66d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/giantLevel.unity
     guid: b79e67edc5cbb95499ab32b9943f99de
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/lv2.unity
     guid: 5cabdbd0a59a3394d8e420fd3ed96d2c
   - enabled: 1
     path: Assets/Scenes/Used Scenes/diedmenue.unity
     guid: e80b46e8aeb33d84691cc64effd72e36
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/Level Select.unity
+    guid: 66bb8eda3e318574cb38e25d1c7b1597
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/levelFive.unity
+    guid: 9fb1ee76e32581d4497833235af8462f
+  - enabled: 1
+    path: Assets/Scenes/Used Scenes/levelSix.unity
+    guid: d0c1d71eacc94b148a787d35fd9209ac
   m_configObjects: {}
