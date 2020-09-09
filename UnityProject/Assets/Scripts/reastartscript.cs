@@ -7,6 +7,6 @@ public class reastartscript : MonoBehaviour
 {
     public void reastartbutton()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(6);
     }
 }
