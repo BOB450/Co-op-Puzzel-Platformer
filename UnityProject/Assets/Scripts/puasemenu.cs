@@ -53,7 +53,7 @@ public class puasemenu : MonoBehaviour
     public void exitbutton()//on click
     {
         Application.Quit();//quits application
-        Debug.Log("kjsdnfkljsdf");
+        Debug.Log("Exit");
 
     }
 
