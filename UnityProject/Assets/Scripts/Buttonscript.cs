@@ -30,7 +30,7 @@ public class Buttonscript : MonoBehaviour
     void Update()
     {
 
-        transform.Translate(Vector3.forward * Time.deltaTime);
+        //transform.Translate(Vector3.forward * Time.deltaTime);
     }
     // player colides with button
     void OnTriggerEnter2D(Collider2D col)
@@ -71,7 +71,7 @@ public class Buttonscript : MonoBehaviour
         }
         else
         {
-            Debug.Log("change color");
+            
             if (iswallhorozontal == false)
             {
                 moveup();
